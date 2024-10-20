@@ -1,4 +1,4 @@
-# 🌐 Infinite Bot: AI-Powered Query Solution
+# 🌐 INFAInite Bot: AI-Powered Query Solution
 
 Welcome to **Infinite Bot**, a highly scalable and serverless AI solution that utilizes cutting-edge AI models and APIs to process user queries in a seamless and efficient manner. This solution integrates **AWS Bedrock**, **RAG**, **Sarvam AI**, and **Infobip** to offer multilingual support and WhatsApp-based query handling. 🚀✨
 
