@@ -76,9 +76,9 @@ def translate_speech_to_text(data,api_key):
     headers = {
         'API-Subscription-Key': api_key
     }
-
-    response = requests.request("POST", url, headers=headers, data=payload, files=files)
     
+    response = requests.request("POST", url, headers=headers, data=payload, files=files)
+
     print("Response from Sarvam AI: " + str(response.text))
     return [response.text[0],response.text[1]]
 
@@ -168,9 +168,9 @@ def generate_audio_response(response,language_code,api_key):
     print("Trying to generate audio response")
     url = 'https://api.sarvam.ai/text-to-speech'
     headers = {"api-subscription-key":api_key,"Content-Type": "application/json"}
-    if(response.length<5){
+    if(response.length<5):
         response = "I'm sorry but I could not understand what you mean"
-    }
+    
     print("Response from Llama: " + str(response))
     print("Language code: " + str(language_code))
     
